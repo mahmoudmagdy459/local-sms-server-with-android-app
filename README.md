@@ -11,12 +11,16 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 |------------------------------------|:----------------------|
 | function getDeviceStatus();        |function getSMSList(); |
 | function getAirplaneMode();        |                  
-| function getNetworkOperatorName(); | *send-sms-o1*                                          |
+| function getNetworkOperatorName(); | 
 | function getTimeStamp();           |
-| function getBatteryStatus();       |function SendSMS($user,$password,$from,$to,$message);   |
-| function getBatteryLevel();        |function Check_SendSMS();                               |
+| function getBatteryStatus();       |
+| function getBatteryLevel();        |
 | function getSimState();            |
-
+ 
+| *send-sms-o1*                                           |
+|---------------------------------------------------------|
+| function SendSMS($user,$password,$from,$to,$message);   |
+| function Check_SendSMS();                               |
 ****
 ```
 ## Send SMS message
