@@ -19,13 +19,13 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 ****
 ```
 'sms-list'
-function getSMSList();
+  function getSMSList();
 ```
 ****
 ```
 'send-sms-o1'
-function SendSMS($user,$password,$from,$to,$message);
-function Check_SendSMS();
+  function SendSMS($user,$password,$from,$to,$message);
+  function Check_SendSMS();
 ****
 ```
 ## Send SMS message
@@ -35,14 +35,16 @@ include_once('smsgateway.php');
  $SMSGateWay = new RSG();
   $sms_to = '+XXX-.....';  //Recipient number
   $sms_msg = ".........\n"; //Your message
-    $SMSGateWay = new RSG();<br>
-     echo $SMSGateWay->SendSMS('','APP Username','',$sms_to,$sms_msg);
-     echo $SMSGateWay->SMS_Connect(HOSTNAME,HOSTPORT,IS_SECURE,'v1','send-sms-o1');
-     echo $SMSGateWay->Check_SendSMS();
+  echo $SMSGateWay->SendSMS('','APP Username','',$sms_to,$sms_msg);
+  echo $SMSGateWay->SMS_Connect(HOSTNAME,HOSTPORT,IS_SECURE,'v1','send-sms-o1');
+  echo $SMSGateWay->Check_SendSMS();
 ```
 ****
 ## View Mobile SMS list
 ```
+include_once('config.php');
+include_once('smsgateway.php');
+ $SMSGateWay = new RSG();
   $SMSGateWay->SMS_Connect(HOSTNAME,HOSTPORT,IS_SECURE,API_VERSION,'sms-list');
   $sms_list = $SMSGateWay->getSMSList();
   echo '<table style="padding:5px;margin:0 auto 0;width:700px;" border="1">';
