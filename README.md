@@ -27,9 +27,9 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 include_once('config.php');
 include_once('smsgateway.php');
  $SMSGateWay = new RSG();
-  $sms_to = '+XXX-.....';  //Recipient number
-  $sms_msg = ".........\n"; //Your message
-  echo $SMSGateWay->SendSMS('$APP_USERNAME','$APP_PASSWORD','$APP_FROM',$sms_to,$sms_msg);
+  $SMS_TO = '+XXX-.....';  //Recipient number
+  $SMS_MSG = ".........\n"; //Your message
+  echo $SMSGateWay->SendSMS($APP_USERNAME, $APP_PASSWORD, $APP_FROM, $SMS_TO, $SMS_MSG);
   echo $SMSGateWay->SMS_Connect(HOSTNAME,HOSTPORT,IS_SECURE,'v1','send-sms-o1');
   echo $SMSGateWay->Check_SendSMS();
 ```
