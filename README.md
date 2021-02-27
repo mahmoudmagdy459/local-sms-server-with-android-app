@@ -22,7 +22,6 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 | function SendSMS($user,$password,$from,$to,$message);     |
 | function Check_SendSMS();                                 |
 ****
-```
 ## Send SMS message
 ```php
 include_once('config.php');
