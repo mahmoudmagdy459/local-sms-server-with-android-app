@@ -17,8 +17,6 @@ if(isset($_GET['logout'])){
  }
 }
 if(isset($_POST['sms_system_login_btn'])){
-  $username= '';  //Your username
-  $password = ''; //Your Password
   $_SESSION['_username'] = sha1($username);
 if($_POST['_username'] == $username && $_POST['_password'] == $password){   
 echo '<!DOCTYPE html><html><head><title>SMS GateWay</title></head><body>';
