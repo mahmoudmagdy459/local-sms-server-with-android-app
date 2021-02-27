@@ -6,9 +6,8 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
   $get = ['device-status', 'sms-list', 'send-sms-o1']
 ``` 
 ****
-```
 
-| device-status                      |
+| *device-status*                    |
 | -----------------------------------|
 | function getDeviceStatus();        |
 | function getAirplaneMode();        |
@@ -18,7 +17,6 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 | function getBatteryLevel();        |
 | function getSimState();            |
 
-```
 ****
 ```
 'sms-list'
