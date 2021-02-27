@@ -7,13 +7,13 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 ``` 
 ****
  'device-status'  
-function getDeviceStatus();
-function getAirplaneMode();
-function getNetworkOperatorName();
-function getTimeStamp();
-function getBatteryStatus();
-function getBatteryLevel();
-function getSimState();
+   function getDeviceStatus();
+   function getAirplaneMode();
+   function getNetworkOperatorName();
+   function getTimeStamp();
+   function getBatteryStatus();
+   function getBatteryLevel();
+   function getSimState();
 ```
 ```
 'sms-list'
@@ -23,6 +23,7 @@ function getSMSList();
 'send-sms-o1'
 function SendSMS($user,$password,$from,$to,$message);
 function Check_SendSMS();
+****
 ```
 ## Send SMS message
 ```
@@ -36,6 +37,7 @@ include_once('smsgateway.php');
      echo $SMSGateWay->SMS_Connect(HOSTNAME,HOSTPORT,IS_SECURE,'v1','send-sms-o1');
      echo $SMSGateWay->Check_SendSMS();
 ```
+****
 ## View Mobile SMS list
 ```
   $SMSGateWay->SMS_Connect(HOSTNAME,HOSTPORT,IS_SECURE,API_VERSION,'sms-list');
@@ -60,4 +62,4 @@ include_once('smsgateway.php');
    echo '</table>';
   } 
   ```
-  
+  ****
