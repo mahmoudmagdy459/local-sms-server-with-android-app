@@ -17,10 +17,10 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 | function getBatteryLevel();        |
 | function getSimState();            |
  
-| *send-sms-o1*                                           |
-|---------------------------------------------------------|
-| function SendSMS($user,$password,$from,$to,$message);   |
-| function Check_SendSMS();                               |
+| *send-sms-o1*                                             |
+|-----------------------------------------------------------|
+| function SendSMS($user,$password,$from,$to,$message);     |
+| function Check_SendSMS();                                 |
 ****
 ```
 ## Send SMS message
