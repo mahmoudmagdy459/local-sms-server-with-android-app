@@ -8,7 +8,7 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 ****
 
 | *device-status*                    |    | *sms-list*            |
-|------------------------------------|    |-----------------------|
+|------------------------------------|    |:----------------------|
 | function getDeviceStatus();        |    |function getSMSList(); |
 | function getAirplaneMode();        |                  
 | function getNetworkOperatorName(); |    | *send-sms-o1*                                         |
