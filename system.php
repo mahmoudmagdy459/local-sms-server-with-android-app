@@ -1,6 +1,4 @@
 <?php
-//8a6b34d42a6c0722382.ddns.net
-
 @session_start();
 include_once('config.php');
 include_once('smsgateway.php');
