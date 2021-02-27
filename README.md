@@ -8,14 +8,13 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 ****
 
 | *device-status*                    |    | *sms-list*            |
-| -----------------------------------|    |-----------------------|
+|-----------------------------------|     |-----------------------|
 | function getDeviceStatus();        |    |function getSMSList(); |
 | function getAirplaneMode();        |                  
 | function getNetworkOperatorName(); |    |*send-sms-o1*                                          |
-| function Check_SendSMS();          |    | ------------------------------------------------------|
-| function getTimeStamp();           |    | function SendSMS($user,$password,$from,$to,$message); |
-| function getBatteryStatus();       |  
-| function getBatteryLevel();        |         
+| function getTimeStamp();           |    | ------------------------------------------------------|
+| function getBatteryStatus();       |    | function SendSMS($user,$password,$from,$to,$message); |
+| function getBatteryLevel();        |    | function Check_SendSMS();                             |
 | function getSimState();            |
 
 
