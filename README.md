@@ -1,6 +1,6 @@
 # php-sms-code-using-rest-sms-gateway-android-app
 
-Trun your old android phone to SMS gateway and control app through my php script
+Trun your old android phone to SMS gateway and control app through my simple php script
 ```php
 function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',$get='');
   $get = ['device-status', 'sms-list', 'send-sms-o1']
