@@ -29,7 +29,7 @@ function SMS_Connect($ipAddress,$port='8080',$is_secure=false,$api_version='v1',
 ****
 ```
 ## Send SMS message
-```
+```php
 include_once('config.php');
 include_once('smsgateway.php');
  $SMSGateWay = new RSG();
@@ -41,7 +41,7 @@ include_once('smsgateway.php');
 ```
 ****
 ## View Mobile SMS list
-```
+```php
 include_once('config.php');
 include_once('smsgateway.php');
  $SMSGateWay = new RSG();
