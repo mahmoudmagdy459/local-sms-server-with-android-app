@@ -29,7 +29,7 @@ include_once('smsgateway.php');
  $SMSGateWay = new RSG();
   $sms_to = '+XXX-.....';  //Recipient number
   $sms_msg = ".........\n"; //Your message
-  echo $SMSGateWay->SendSMS('','APP Username','',$sms_to,$sms_msg);
+  echo $SMSGateWay->SendSMS('','$APP_USERNAME','$APP_PASSWORD',$sms_to,$sms_msg);
   echo $SMSGateWay->SMS_Connect(HOSTNAME,HOSTPORT,IS_SECURE,'v1','send-sms-o1');
   echo $SMSGateWay->Check_SendSMS();
 ```
